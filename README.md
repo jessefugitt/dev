@@ -9,7 +9,7 @@ docker run -d -p 2222:22 -v ~/.ssh/authorized_keys:/root/.ssh/host_authorized_ke
 ssh root@host-ip-address -p 2222
 ```
 ###To start VSCode (w/ X11 Forwarding)
-/tools/VSCode/VSCode-linux-x64/Code
+/tools/VSCode-linux-x64/Code
 
 ###To modify dev
 ```

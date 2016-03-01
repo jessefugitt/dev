@@ -20,10 +20,10 @@ RUN apt-get update && apt-get install -y \
  && rm -rf /var/lib/apt/lists/* 
 
 #VSCode
-RUN mkdir -p /tools/VSCode \
- && wget -O /tools/VSCode/VSCode-linux64.zip https://az764295.vo.msecnd.net/public/0.10.6-release/VSCode-linux64.zip \
- && cd /tools/VSCode \
- && unzip VSCode-linux64.zip
+RUN mkdir -p /tools \
+ && wget -O /tools/VSCode-linux-x64-stable.zip https://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCode-linux-x64-stable.zip \
+ && cd /tools \
+ && unzip VSCode-linux-x64-stable.zip
 
 # Java
 RUN \
